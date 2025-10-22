@@ -19,5 +19,6 @@ On the other hand, Splunk is a powerful Security Information and Event Managemen
 ## Configuration and Deployment
 
 
+### Network Configuration
 
-###
+Deploy the Splunk Indexer (Splunk Server) to store logs sent from the Splunk Forwarder. Since this is the server, a static IP address (10.0.1.25) is configured.
