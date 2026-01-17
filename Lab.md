@@ -19,3 +19,5 @@ Lab sử dụng VMWare Workstation để chạy 3 máy ảo: 2 máy Ubuntu và 1
 Được cài đặt Wazuh manager, Wazuh Indexer, Wazuh dashboard.
 Có thể tham khảo hướng dẫn cài đặt ở đây: https://documentation.wazuh.com/current/installation-guide/index.html 
 
+### Cấu hình mạng
+Tất cả các máy ảo được cấu hình sử dụng chung một mạng ảo NAT, cho phép chúng giao tiếp trực tiếp với nhau thông qua địa chỉ IP nội bộ. Cách cấu hình này giúp đảm bảo các luồng dữ liệu như log từ endpoint gửi về SIEM, hay cảnh báo từ Wazuh gửi sang hệ thống SOAR đều được thực hiện một cách ổn định. Đối với SOC Analyst, việc truy cập vào các giao diện quản trị như Wazuh Dashboard, Shuffle hay TheHive được thực hiện thông qua trình duyệt web trên máy host, không cần triển khai thêm máy ảo riêng.
