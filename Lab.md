@@ -12,5 +12,10 @@ a
 
 ## Cài đặt và cấu hình
 
+Lab sử dụng VMWare Workstation để chạy 3 máy ảo: 2 máy Ubuntu và 1 Windows 10.
 
+### VM1 - Wazuh server
+
+Được cài đặt Wazuh manager, Wazuh Indexer, Wazuh dashboard.
+Có thể tham khảo hướng dẫn cài đặt ở đây: https://documentation.wazuh.com/current/installation-guide/index.html 
 
